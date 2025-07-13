@@ -1,0 +1,21 @@
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 0;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+
+    @media (max-width: 480px) {
+      font-size: 0.75rem;
+      line-height: 1.4;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+}

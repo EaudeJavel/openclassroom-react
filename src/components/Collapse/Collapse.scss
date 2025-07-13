@@ -1,0 +1,46 @@
+.collapse {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.collapse__header {
+  width: 100%;
+  background-color: #ff6060;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+}
+
+.collapse__icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.collapse__icon.open {
+  transform: rotate(180deg);
+}
+
+.collapse__content {
+  background-color: #f6f6f6;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  animation: contentFadeIn 0.3s ease-in-out;
+}
+
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
